@@ -1,0 +1,8 @@
+uvicorn
+fastapi
+beautifulsoup4
+requests
+matplotlib
+pandas
+fake_useragent
+pydantic

@@ -1,0 +1,17 @@
+version: "3.0"
+services:
+  llamacpp: # Container's name
+    image: "llama-cpp-gguf" # Image's name
+    container_name: "llamacpp" # Container's name
+    ports:
+      - 8080:8080
+    command: --server -m /models/openthaigpt-Q4_K_M.gguf -c 1000 -p 8080 --host 0.0.0.0
+    volumes:
+      - "./models:/models"
+  
+  modulesapi:
+    image: test-api
+    container_name: "modulesapi"
+    ports:
+      - 8000:8000
+    

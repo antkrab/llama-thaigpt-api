@@ -1,0 +1,3 @@
+FROM ghcr.io/ggerganov/llama.cpp:full--b1-bfe76d4
+
+EXPOSE 8080
